@@ -1,0 +1,85 @@
+.hotel-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.hotel-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.hotel-card img {
+  margin-bottom: 1rem;
+}
+
+.hotel-card h3 {
+  margin: 0 0 8px 0;
+  color: #5f2c82;
+  font-size: 1.25em;
+  font-weight: 600;
+}
+
+.hotel-card p {
+  margin: 0 0 14px 0;
+  color: #357e7b;
+  font-size: 1em;
+}
+
+.button {
+  width: 100%;
+  padding: 10px 0;
+  background: linear-gradient(90deg, #5f2c82 60%, #49a09d 100%);
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-weight: 600;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(95,44,130,0.09);
+  letter-spacing: 0.5px;
+}
+
+.button:hover,
+.button:focus {
+  background: linear-gradient(90deg, #432c6e 60%, #357e7b 100%);
+}
+
+
+.filter-bar {
+  margin: 32px auto 0 auto;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.filter-bar .input-field {
+  width: 4in; /* Set width to exactly 4 inches */
+}
+
+.input-field {
+  width: 260px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1.5px solid #bdbdbd;
+  background: #f5f6fa;
+  font-size: 1em;
+  color: #23213a;
+  transition: border 0.2s, background 0.2s;
+}
+
+.input-field:focus {
+  border: 1.5px solid #5f2c82;
+  outline: none;
+  background: #fff;
+}

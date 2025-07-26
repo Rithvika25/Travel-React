@@ -1,0 +1,228 @@
+/* 
+.modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 36px 32px 28px 32px;
+  border-radius: 14px;
+  min-width: 340px;
+  max-width: 95vw;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  position: relative;
+  text-align: center;
+}
+
+
+.close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  background: #f5f6fa;
+  border: 1.5px solid #bdbdbd;
+  border-radius: 6px;
+  font-size: 1.3em;
+  color: #888;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  z-index: 10;
+  padding: 0;
+}
+.close-btn:hover {
+  background: #ffe6e6;
+  color: #d32f2f;
+  border-color: #d32f2f;
+}
+
+.modal-content h2 {
+  margin-bottom: 22px;
+  font-size: 1.4em;
+  color: #1976d2;
+  font-weight: 600;
+}
+
+         .input-field, select {
+          width: 100%;
+          margin-bottom: 16px;
+          padding: 12px 10px;
+          border-radius: 6px;
+          border: 1px solid #bdbdbd;
+          background: #fafafa;
+          font-size: 1em;
+          transition: border 0.2s;
+          box-sizing: border-box;
+        } 
+
+.input-field,
+select {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 12px 10px;
+  border-radius: 6px;
+  border: 1px solid #bdbdbd;
+  background: #fafafa;
+  font-size: 1em;
+  transition: border 0.2s;
+  box-sizing: border-box;
+  color: #000; 
+}
+
+.input-field:focus, select:focus {
+  border: 1.5px solid #1976d2;
+  outline: none;
+  background: #fff;
+}
+
+.button {
+  width: 100%;
+  padding: 14px 0;
+  background: linear-gradient(90deg, #1976d2 60%, #42a5f5 100%);
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-weight: 600;
+  font-size: 1.08em;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(25,118,210,0.09);
+}
+.button:hover, .button:focus {
+  background: linear-gradient(90deg, #1565c0 60%, #1976d2 100%);
+}
+
+.error-message {
+  color: #d32f2f;
+  background: #fff3f3;
+  border: 1px solid #ffcdd2;
+  border-radius: 4px;
+  padding: 7px 12px;
+  margin-bottom: 14px;
+  font-size: 0.97em;
+  text-align: left;
+}
+
+ */
+.modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 36px 32px 28px 32px;
+  border-radius: 14px;
+  min-width: 340px;
+  max-width: 95vw;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  position: relative;
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  background: #f5f6fa;
+  border: 1.5px solid #bdbdbd;
+  border-radius: 6px;
+  font-size: 1.3em;
+  color: #888;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  z-index: 10;
+  padding: 0;
+}
+
+.close-btn:hover {
+  background: #ffe6e6;
+  color: #d32f2f;
+  border-color: #d32f2f;
+}
+
+.modal-content h2 {
+  margin-bottom: 22px;
+  font-size: 1.4em;
+  color: #1976d2;
+  font-weight: 600;
+}
+
+.input-field,
+select {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 12px 10px;
+  border-radius: 6px;
+  border: 1px solid #bdbdbd;
+  background: #fafafa;
+  font-size: 1em;
+  transition: border 0.2s;
+  box-sizing: border-box;
+  color: #000; /* User input in black */
+}
+
+/* ✅ Placeholder text light gray */
+.input-field::placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.input-field:focus,
+select:focus {
+  border: 1.5px solid #1976d2;
+  outline: none;
+  background: #fff;
+}
+
+.button {
+  width: 100%;
+  padding: 14px 0;
+  background: linear-gradient(90deg, #1976d2 60%, #42a5f5 100%);
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-weight: 600;
+  font-size: 1.08em;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.09);
+}
+
+.button:hover,
+.button:focus {
+  background: linear-gradient(90deg, #1565c0 60%, #1976d2 100%);
+}
+
+.error-message {
+  color: #d32f2f;
+  background: #fff3f3;
+  border: 1px solid #ffcdd2;
+  border-radius: 4px;
+  padding: 7px 12px;
+  margin-bottom: 14px;
+  font-size: 0.97em;
+  text-align: left;
+}

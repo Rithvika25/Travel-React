@@ -1,0 +1,218 @@
+
+ /* .form-container {
+  max-width: 400px;
+  margin: 60px auto 40px auto;
+  padding: 32px 28px 28px 28px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.09);
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: 500;
+  color: #222;
+}
+
+.input-field,
+input {
+  width: 100%;
+  padding: 12px 10px;
+  border-radius: 5px;
+  border: 1px solid #bdbdbd;
+  background: #fafafa;
+  font-size: 1em;
+  transition: border 0.2s;
+  margin-bottom: 2px;
+  box-sizing: border-box;
+}
+
+.input-field:focus,
+input:focus {
+  border: 1.5px solid #007bff;
+  outline: none;
+  background: #fff;
+}
+
+.button,
+button {
+  width: 100%;
+  padding: 14px 0;
+  background: linear-gradient(90deg, #007bff 60%, #0056b3 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1.08em;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.button:hover,
+button:hover,
+.button:focus,
+button:focus {
+  background: linear-gradient(90deg, #0056b3 60%, #007bff 100%);
+}
+
+.error-message {
+  color: #d32f2f;
+  background: #fff3f3;
+  border: 1px solid #ffcdd2;
+  border-radius: 4px;
+  padding: 7px 12px;
+  margin-bottom: 14px;
+  font-size: 0.97em;
+  text-align: left;
+}
+
+h1, h2 {
+  font-size: 2em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: #222;
+}
+
+@media (max-width: 500px) {
+  .form-container {
+    padding: 18px 6px;
+    max-width: 98vw;
+  }
+} ///////////////////////////////////*/
+ body {
+  background: linear-gradient(135deg, #5f2c82 0%, #49a09d 100%);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-container {
+  max-width: 400px;
+  margin: 60px auto 40px auto;
+  padding: 36px 32px 32px 32px;
+  border: 1px solid #e0e0e0;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.97);
+  box-shadow: 0 8px 32px rgba(95,44,130,0.13);
+  text-align: center;
+  color: #23213a; /* Lighter text for better readability */
+}
+
+.form-group {
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: 500;
+  color: #3a2766;
+}
+
+.input-field,
+input {
+  width: 100%;
+  padding: 12px 10px;
+  border-radius: 6px;
+  border: 1.5px solid #bdbdbd;
+  background: #f5f6fa;
+  font-size: 1em;
+  color: #d6d5e3; /* Lighter input text */
+  transition: border 0.2s, background 0.2s;
+  margin-bottom: 2px;
+  box-sizing: border-box;
+}
+
+.input-field:focus,
+input:focus {
+  border: 1.5px solid #5f2c82;
+  outline: none;
+  background: #fff;
+  color: #dedde6;
+}
+
+.button,
+button {
+  width: 100%;
+  padding: 14px 0;
+  background: linear-gradient(90deg, #5f2c82 60%, #49a09d 100%);
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-weight: 600;
+  font-size: 1.08em;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(95,44,130,0.09);
+  letter-spacing: 0.5px;
+}
+
+.button:hover,
+button:hover,
+.button:focus,
+button:focus {
+  background: linear-gradient(90deg, #432c6e 60%, #357e7b 100%);
+}
+
+.error-message {
+  color: #d32f2f;
+  background: #fff3f3;
+  border: 1px solid #ffcdd2;
+  border-radius: 4px;
+  padding: 7px 12px;
+  margin-bottom: 14px;
+  font-size: 0.97em;
+  text-align: left;
+}
+
+h1, h2 {
+  font-size: 2em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: #23213a; /* Lighter heading */
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px rgba(95,44,130,0.08);
+}
+
+@media (max-width: 500px) {
+  .form-container {
+    padding: 18px 6px;
+    max-width: 98vw;
+  }
+}
+
+/* Add to LoginSignup.css */
+.popup-modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.popup-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}

@@ -1,0 +1,37 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('https://av.sc.com/corp-en/content/images/header_q3.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+.form-container {
+  max-width: 350px;
+  margin: 40px auto;
+  padding: 24px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+}
+.input-field {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #aaa;
+}
+.error-message {
+  color: red;
+  font-size: 0.9em;
+}
+.button {
+  width: 100%;
+  padding: 10px;
+  background: #282c34;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
